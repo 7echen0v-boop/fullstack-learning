@@ -1,13 +1,6 @@
-.container {
-    flex-wrap: wrap;
-  display: flex;
-  justify-content: space-between;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
 }
 
-.box {
-  background: #eee;
-  padding: 20px;
-  flex: 1;
-  text-align: center;
-}
