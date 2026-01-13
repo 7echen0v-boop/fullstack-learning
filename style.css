@@ -1,19 +1,13 @@
-body {
- .site-header {
-  background-color: #333;
-  color: white;
+.container {
+    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.box {
+  background: #eee;
   padding: 20px;
+  flex: 1;
   text-align: center;
 }
-
-.card {
-  background: white;
-  padding: 16px;
-  margin-bottom: 16px;
-  border-radius: 8px;
-}
-
-.text {
-  color: #555;
-}
-
