@@ -1,0 +1,15 @@
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  color: #453;
+}
+
+section {
+  background: gray;
+  padding: 13px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
