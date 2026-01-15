@@ -1,6 +1,6 @@
 let text = document.getElementById("text");
-let button = document.getElementById("changeBtn");
+let button = document.getElementById("styleBtn");
 
 button.addEventListener("click", function () {
-  text.innerText = "сегодня ебаный 18 день хуй пойми чего";
+  text.classList.toggle("active");
 });
