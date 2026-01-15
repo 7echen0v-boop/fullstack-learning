@@ -1,7 +1,9 @@
-let day = 15;
-
-if (day === 15) {
-  console.log("Сегодня 15 день обучения");
-} else {
-  console.log("Другой день");
+function showDay(day) {
+  console.log("Сегодня день " + day);
 }
+
+showDay(16);
+let button = document.getElementById("myButton");
+button.addEventListener("click", function () {
+  console.log("Сегодня день 17 обучения");
+});
