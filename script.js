@@ -1,9 +1,6 @@
-function showDay(day) {
-  console.log("Сегодня день " + day);
-}
+let text = document.getElementById("text");
+let button = document.getElementById("changeBtn");
 
-showDay(16);
-let button = document.getElementById("myButton");
 button.addEventListener("click", function () {
-  console.log("Сегодня день 17 обучения");
+  text.innerText = "сегодня ебаный 18 день хуй пойми чего";
 });
