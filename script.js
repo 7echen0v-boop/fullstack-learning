@@ -1,13 +1,20 @@
-
-let button = document.getElementById("showBtn");
+let items = ["Учить JS", "Сделать перерыв"];
 let list = document.getElementById("list");
 
-button.addEventListener("click", function () {
+render();
+
+function render() {
   list.innerHTML = "";
 
-  for (let i = 4; i <= 16; i++) {
+  for (let i = 0; i < items.length; i++) {
     let li = document.createElement("li");
-    li.innerText = "Число " + i;
+    li.innerText = items[i];
+
+    li.addEventListener("click", () => {
+      items.splice(i, 1);
+      render();
+    });
+
     list.appendChild(li);
   }
-});
+}
