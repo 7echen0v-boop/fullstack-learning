@@ -1,11 +1,13 @@
-let num1 = document.getElementById("num1");
-let num2 = document.getElementById("num2");
-let button = document.getElementById("calcBtn");
-let result = document.getElementById("result");
+
+let button = document.getElementById("showBtn");
+let list = document.getElementById("list");
 
 button.addEventListener("click", function () {
-  let a = Number(num1.value);
-  let b = Number(num2.value);
+  list.innerHTML = "";
 
-  result.innerText = "Результат: " + (a / b);
+  for (let i = 4; i <= 16; i++) {
+    let li = document.createElement("li");
+    li.innerText = "Число " + i;
+    list.appendChild(li);
+  }
 });
